@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{array}
+
+
+\setlength{\hoffset}{0cm}
+\setlength{\oddsidemargin}{-3mm}
+\setlength{\evensidemargin}{-3cm}
+\setlength{\marginparsep}{0cm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\textheight}{24.7cm}
+\setlength{\textwidth}{17cm}
+\setlength{\topmargin}{-45pt}
+
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\floatpagefraction}{1}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+%\renewcommand{\figurename}{Fig.} %図をFig.にする
+
+
+%図のキャプションからコロン：を消す
+\makeatletter
+\long\def\@makecaption#1#2{% #1=図表番号、#2=キャプション本文
+\sbox\@tempboxa{#1. #2}
+\ifdim \wd\@tempboxa >\hsize
+#1 #2\par 
+\else
+\hb@xt@\hsize{\hfil\box\@tempboxa\hfil}
+\fi}
+\makeatother
+
+
+
+\begin{document}
+%
+\title{\vspace{-30mm}  自動車工学特論~~レポート \\ 機械知能工学専攻~~16344217~~津上~祐典}
+\date{}
+%
+\maketitle
+%
+\vspace{-20mm}
+%\parindent = 0pt %すべての段落で字下げをしない
+%
+パワートレーンの課題としてエネルギー対応や二酸化炭素の削減，大気汚染防止
+が挙げられる．将来の自動車用のパワートレーンは省エネルギー，かつ二酸化炭
+素を放出せず環境に優しいものであるべきと思う．そのためには，水素もしくは
+電気で動作するようなパワートレーンの開発が必要と考えられる．その技術の課
+題として電気の場合，一回の充電での最高走行距離が短い，また補充に多くの
+時間を要することがあげられる．そ
+の課題を解決するためには，小さくても多く電力を蓄えることが出来るバッテリー
+の開発，また，省電力で多く走行できるパワートレーンの機構の開発が必要である
+と考えられる．また，急速に充電するシステムも必要だと考えられる．更に開発が出来た場合，電力補給場所（ガソリンスタンドの電気
+版みたいな）の普及が必要になってくると思われる．
+
+\end{document}
